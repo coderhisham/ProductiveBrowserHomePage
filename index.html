@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="assets/style.css" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
 
     <!--bootstrap 5-->
     <link
@@ -55,51 +56,15 @@
   </head>
   <body>
     <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-      <!-- Clock-->
-      <div>
-        <div
-          style="top: 23%; right: 3%"
-          class="w3-display-right w3-display-container clock"
-        >
-          <div class="num number-1"></div>
-          <div class="num number-2"></div>
-          <div class="num number-3"></div>
-          <div class="num number-4"></div>
-          <div class="num number-5"></div>
-          <div class="num number-6"></div>
-          <div class="num number-7"></div>
-          <div class="num number-8"></div>
-          <div class="num number-9"></div>
-          <div class="num number-10"></div>
-          <div class="num number-11"></div>
-          <div class="num number-12"></div>
-          <!--hands of the clock-->
-          <div class="hand" id="second">
-            <div class="second" style="background: red !important"></div>
-          </div>
-          <div class="hand" id="minute">
-            <div class="minute"></div>
-          </div>
-          <div class="hand" id="hour">
-            <div class="hour"></div>
-          </div>
-          <div class="markname"></div>
-        </div>
-      </div>
-      <div class="w3-padding-large w3-xlarge"></div>
-
-      <div class="w3-display-middle">
-        <h1 class="w3-jumbo w3-animate-top w3-center" id="greetings"></h1>
+      <div class="clock-container">
+        <h1 id="displayClock" class="clock"></h1>
+        <h1 class="user" id="greetings"></h1>
         <hr class="w3-border-grey" style="margin: auto; width: 40%" />
-        <br />
-
-        <!--FORM-->
         <div class="tpw">
           <div class="typewriter">
             <h1>"Just Do It"</h1>
           </div>
         </div>
-
         <div hidden id="header2">
           <div hidden class="flexrow-container">
             <div hidden class="darker-theme theme-selector"></div>
@@ -132,8 +97,9 @@
           </ul>
         </div>
       </div>
+      </div>
     </div>
-
+    <script type="text/javascript" src="assets/clock.js"></script>
     <script type="text/javascript" src="assets/script.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"

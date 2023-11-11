@@ -4,33 +4,12 @@ var myDate = new Date();
 var hrs = myDate.getHours();
 
 var greet;
-
+const userName = "Hisham";
 if (hrs < 12) greet = "Good Morning";
 else if (hrs >= 12 && hrs <= 17) greet = "Good Afternoon";
 else if (hrs >= 17 && hrs <= 24) greet = "Good Evening";
 
-document.getElementById("greetings").innerHTML = "<b>" + greet + "</b>";
-
-/*Clock Script
------------------*/
-
-const secondDiv = document.getElementById("second");
-const minuteDiv = document.getElementById("minute");
-const hourDiv = document.getElementById("hour");
-
-setInterval(updateClock, 1000);
-
-function updateClock() {
-  var date = new Date();
-  var second = date.getSeconds() / 60;
-  var minute = date.getMinutes() / 60;
-  var hour = date.getHours() / 12;
-
-  secondDiv.style.transform = "rotate( " + second * 360 + "deg)";
-  minuteDiv.style.transform = "rotate( " + minute * 360 + "deg)";
-  hourDiv.style.transform = "rotate( " + hour * 360 + "deg)";
-}
-/**/
+document.getElementById("greetings").innerHTML = greet + ", " + userName;
 
 /*To Do list*/
 
