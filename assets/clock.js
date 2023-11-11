@@ -26,9 +26,9 @@ function showTime() {
   // if(s<10){s='0' + s; }
 
   //version corta
-  //   h = h < 10 ? (h = "0" + h) : h;
-  //   m = m < 10 ? (m = "0" + m) : m;
-  //   s = s < 10 ? (s = "0" + s) : s;
+  h = h < 10 ? (h = "0" + h) : h;
+  m = m < 10 ? (m = "0" + m) : m;
+  s = s < 10 ? (s = "0" + s) : s;
 
   //small tag para los segundos y el pm/am
   const time = `${h}:${m}`;
